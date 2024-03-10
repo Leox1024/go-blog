@@ -2,14 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:65178/</loc>
+    <loc>http://localhost:65421/</loc>
     <lastmod>2024-03-06T20:34:07+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:65178/post/</loc>
+    <loc>http://localhost:65421/post/connectesp8266withdht11sensortothingspeak/</loc>
     <lastmod>2024-03-06T20:34:07+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:65178/categories/</loc>
+    <loc>http://localhost:65421/post/</loc>
+    <lastmod>2024-03-06T20:34:07+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:65178/tags/</loc>
+    <loc>http://localhost:65421/categories/</loc>
+  </url><url>
+    <loc>http://localhost:65421/tags/</loc>
   </url>
 </urlset>
