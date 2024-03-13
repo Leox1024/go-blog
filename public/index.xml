@@ -2,10 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>blog.leox.me</title>
-    <link>https://l3ox64.github.io/</link>
+    <link>http://localhost:56396/</link>
     <description>Recent content on blog.leox.me</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Mar 2024 20:34:07 +0100</lastBuildDate><atom:link href="https://l3ox64.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Mar 2024 20:34:07 +0100</lastBuildDate>
+    <atom:link href="http://localhost:56396/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Connect ESP8266 with DHT11 sensor to ThingSpeak</title>
+      <link>http://localhost:56396/post/connectesp8266withdht11sensortothingspeak/</link>
+      <pubDate>Wed, 06 Mar 2024 20:34:07 +0100</pubDate>
+      <guid>http://localhost:56396/post/connectesp8266withdht11sensortothingspeak/</guid>
+      <description>Thats how it works</description>
+    </item>
   </channel>
 </rss>
