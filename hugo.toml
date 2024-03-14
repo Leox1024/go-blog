@@ -17,6 +17,7 @@ paginate = 10
   [params.footer]
     since = 2023
     poweredby = true
+    
 
 [menu]
 

@@ -3,7 +3,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-01-06T20:34:07+01:00</lastmod>
+    <lastmod>2024-03-14T22:23:01+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/proxmoxtruenas/</loc>
+    <lastmod>2024-03-14T22:23:01+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/linux/</loc>
+    <lastmod>2024-03-14T22:23:01+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/networking/</loc>
+    <lastmod>2024-03-14T22:23:01+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-03-14T22:23:01+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/pve/</loc>
+    <lastmod>2024-03-14T22:23:01+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/server/</loc>
+    <lastmod>2024-03-14T22:23:01+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-03-14T22:23:01+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/truenas/</loc>
+    <lastmod>2024-03-14T22:23:01+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/proxmoxbasicstips/</loc>
+    <lastmod>2024-03-14T22:09:11+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/connectesp8266withdht11sensortothingspeak/</loc>
     <lastmod>2024-01-06T20:34:07+01:00</lastmod>
@@ -12,12 +39,6 @@
     <lastmod>2024-01-06T20:34:07+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/iot/</loc>
-    <lastmod>2024-01-06T20:34:07+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-01-06T20:34:07+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-01-06T20:34:07+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/search/</loc>

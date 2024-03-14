@@ -13,7 +13,6 @@ draft = false
 ### Use Arduino IDE and load this program: 
 
 ```
-# code block
 #include "DHT.h"
 #include "ESP8266WiFi.h"
 #include "ThingSpeak.h"
