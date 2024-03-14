@@ -6,14 +6,15 @@
     <description>Recent content on blog.leox.me</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Mar 2024 20:34:07 +0100</lastBuildDate>
+    <copyright>Leonardo Cremonti</copyright>
+    <lastBuildDate>Sat, 06 Jan 2024 20:34:07 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Connect ESP8266 with DHT11 sensor to ThingSpeak</title>
       <link>http://localhost:1313/posts/connectesp8266withdht11sensortothingspeak/</link>
-      <pubDate>Wed, 06 Mar 2024 20:34:07 +0100</pubDate>
+      <pubDate>Sat, 06 Jan 2024 20:34:07 +0100</pubDate>
       <guid>http://localhost:1313/posts/connectesp8266withdht11sensortothingspeak/</guid>
-      <description>Thats how it works</description>
+      <description>In this tutorial I will explain you how to connect your ESP8266-01 to ThingSpeak and read some data.&#xA;Introduction In this tutorial I will explain you how to connect your ESP8266-01 to ThingSpeak and read some data.&#xA;Use Arduino IDE and load this program: # code block #include &amp;#34;DHT.h&amp;#34; #include &amp;#34;ESP8266WiFi.h&amp;#34; #include &amp;#34;ThingSpeak.h&amp;#34; const char * api_key = &amp;#34;abcdef&amp;#34;; const char * ssid = &amp;#34;wifi-name&amp;#34;; const char * pass = &amp;#34;wifi-password&amp;#34;; unsigned long myChannelNumber=12345678; const char* server = &amp;#34;api.</description>
     </item>
     <item>
       <title></title>

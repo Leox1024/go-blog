@@ -7,7 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta
   name="description"
-  content="Thats how it works"
+  content="Introduction In this tutorial I will explain you how to connect your ESP8266-01 to ThingSpeak and read some data.
+Use Arduino IDE and load this program: # code block #include &amp;#34;DHT.h&amp;#34; #include &amp;#34;ESP8266WiFi.h&amp;#34; #include &amp;#34;ThingSpeak.h&amp;#34; const char * api_key = &amp;#34;abcdef&amp;#34;; const char * ssid = &amp;#34;wifi-name&amp;#34;; const char * pass = &amp;#34;wifi-password&amp;#34;; unsigned long myChannelNumber=12345678; const char* server = &amp;#34;api.thingspeak.com&amp;#34;; #define DHTPIN 2 #define DHTTYPE DHT11 DHT dht (DHTPIN, DHTTYPE); WiFiClient client; float t; float h; void setup() { ThingSpeak."
 />
 <meta
   name="keywords"
@@ -15,21 +16,21 @@
 />
 <meta name="robots" content="noodp" />
 <meta property="og:title" content="Connect ESP8266 with DHT11 sensor to ThingSpeak" />
-<meta property="og:description" content="Thats how it works" />
+<meta property="og:description" content="In this tutorial I will explain you how to connect your ESP8266-01 to ThingSpeak and read some data." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/posts/connectesp8266withdht11sensortothingspeak/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2024-03-06T20:34:07+01:00" />
-<meta property="article:modified_time" content="2024-03-06T20:34:07+01:00" />
+<meta property="article:published_time" content="2024-01-06T20:34:07+01:00" />
+<meta property="article:modified_time" content="2024-01-06T20:34:07+01:00" />
 
 
 <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Connect ESP8266 with DHT11 sensor to ThingSpeak"/>
-<meta name="twitter:description" content="Thats how it works"/>
+<meta name="twitter:description" content="In this tutorial I will explain you how to connect your ESP8266-01 to ThingSpeak and read some data."/>
 
 
 <link rel="canonical" href="http://localhost:1313/posts/connectesp8266withdht11sensortothingspeak/" />
 
 <link rel="shortcut icon" href="/favicon.ico" />
-<link rel="stylesheet" href="/css/index.a85ebbf06ee701145daa5625a9446ae1d1d7fea8d0baa6f2e5bc271f3d42752c.css">
+<link rel="stylesheet" href="/css/index.990d326724754f27d5d9e8d3b865873e6b1c3f7e92dcc20f80375591db4b9835.css">
 
 
 
@@ -46,7 +47,7 @@
     <div class="flex flex-row gap justify-between w-full max-w-4xl lg:max-w-5xl h-12 mt-3">
   <div class="flex-none ml-2 md:ml-0">
     <a href="/" class="">
-      <img class="h-12 w-12 rounded-full object-cover bg-gray-100" src="https://placehold.co/512/webp" alt="logo">
+      <img class="h-12 w-12 rounded-full object-cover bg-gray-100" src="/logo.webp" alt="logo">
     </a>
   </div>
   <div class="flex-1"></div>
@@ -54,6 +55,38 @@
     
 
 
+
+<nav class="h-full static">
+  <button id="navbar-menu-toggle" type="button" class="inline-flex items-center p-2 text-sm text-slate-800 dark:text-slate-200 rounded-lg md:hidden" aria-controls="navbar-menu" aria-expanded="false">
+    <span class="sr-only">Open main menu</span>
+    <i class="w-8 h-8">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 6l16 0" />
+  <path d="M4 12l16 0" />
+  <path d="M4 18l16 0" />
+</svg>
+
+    </i>
+  </button>
+  <div class="absolute md:static top-16 left-0 right-0 z-50 hidden w-full md:block md:w-auto" id="navbar-menu">
+    <ul class="flex flex-col mx-2 md:mx-0 md:flex-row md:border-0 rounded-sm md:rounded-full px-3 text-base font-medium text-slate-800 dark:text-slate-200 shadow-lg bg-white dark:bg-gray-600 shadow-slate-800/5 dark:shadow-slate-200/5 ring-1 ring-slate-900/5 dark:ring-slate-100/5">
+    
+        <li id="about" class="">
+          <a class="block px-3 py-3 hover:text-emerald-600"
+            href="" title="About">About</a>
+        </li>
+      
+    
+        <li id="post" class="">
+          <a class="block px-3 py-3 hover:text-emerald-600 text-emerald-600"
+            href="/posts/" title="Post">Post</a>
+        </li>
+      
+    
+    </ul>
+  </div>
+</nav>
 
 
   </div>
@@ -116,7 +149,52 @@
     </h1>
 
     
+    <h2 class="my-4 text-large text-slate-600 dark:text-slate-300">
+      In this tutorial I will explain you how to connect your ESP8266-01 to ThingSpeak and read some data.
+    </h2>
     
+    
+  <ul class="flex flex-row flex-wrap text-slate-500 dark:text-slate-300">
+    
+    
+      
+      <li>
+        <a href="/tags/iot/"
+          class="flex flex-row text-sm mr-2 py-1">
+          <i class="h-5 w-5 flex-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M5 9l14 0"></path>
+   <path d="M5 15l14 0"></path>
+   <path d="M11 4l-4 16"></path>
+   <path d="M17 4l-4 16"></path>
+</svg>
+
+          </i>
+          <span class="ml-0">IoT</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/tags/electronic/"
+          class="flex flex-row text-sm mr-2 py-1">
+          <i class="h-5 w-5 flex-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M5 9l14 0"></path>
+   <path d="M5 15l14 0"></path>
+   <path d="M11 4l-4 16"></path>
+   <path d="M17 4l-4 16"></path>
+</svg>
+
+          </i>
+          <span class="ml-0">Electronic</span>
+        </a>
+      </li>
+      
+    
+  </ul>
+
 
 
     <div class="flex flex-col gap-y-1 md:flex-row md:gap-y-0 md:gap-x-4 text-slate-500 dark:text-slate-300">
@@ -135,8 +213,8 @@
 </svg>
 
     </i>
-    <time datetime="2024-03-06T20:34:07&#43;01:00">
-      2024-03-06
+    <time datetime="2024-01-06T20:34:07&#43;01:00">
+      2024-01-06
     </time>
   </div>
 
@@ -151,7 +229,7 @@
 
     </i>
     <span>
-      One minute to read
+      2 minutes to read
     </span>
   </div>
 </div>
@@ -161,13 +239,122 @@
       
       <section class="prose prose-slate dark:prose-invert w-full max-w-4xl lg:max-w-5xl mt-6">
         <h2>Table of Contents</h2>
-        <aside><nav id="TableOfContents"></nav></aside>
+        <aside><nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a>
+      <ul>
+        <li><a href="#use-arduino-ide-and-load-this-program">Use Arduino IDE and load this program:</a></li>
+        <li><a href="#remember-to-change-all-the-initial-parameters">Remember to change all the initial parameters:</a></li>
+        <li><a href="#go-to-files---preferences-and-insert-this-link-in-additional-boards-manager-urls">Go to Files -&gt; Preferences and insert this link in “Additional Boards Manager URLs”:</a></li>
+        <li><a href="#navigate-to-tools-and-select-manage-libraries-install-the-following-libraries">Navigate to &ldquo;Tools&rdquo; and select &ldquo;Manage Libraries.&rdquo; Install the following libraries:</a></li>
+        <li><a href="#as-you-have-installed-all-the-necessary-libraries-you-can-upload-the-code-to-your-esp-connected-via-usb-serial">As you have installed all the necessary libraries you can upload the code to your esp connected via usb serial</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></aside>
       </section>
       
     
 
     <article class="mt-6 w-full max-w-4xl lg:max-w-5xl prose prose-slate dark:prose-invert prose-quoteless post-content">
-      <p>Thats how it works</p>
+      <h2 id="introduction">Introduction</h2>
+<p><strong>In this tutorial I will explain you how to connect your ESP8266-01 to ThingSpeak and read some data.</strong></p>
+<h3 id="use-arduino-ide-and-load-this-program">Use Arduino IDE and load this program:</h3>
+<pre tabindex="0"><code># code block
+#include &#34;DHT.h&#34;
+#include &#34;ESP8266WiFi.h&#34;
+#include &#34;ThingSpeak.h&#34;
+
+const char * api_key = &#34;abcdef&#34;;
+const char * ssid = &#34;wifi-name&#34;;
+const char * pass = &#34;wifi-password&#34;;
+unsigned long myChannelNumber=12345678;
+const char* server = &#34;api.thingspeak.com&#34;;
+
+#define DHTPIN 2
+#define DHTTYPE DHT11
+DHT dht (DHTPIN, DHTTYPE);
+
+WiFiClient client;
+float t;
+float h;
+
+
+void setup()
+{
+ThingSpeak.begin(client);
+dht.begin();
+Serial.begin(115200);
+delay(10);
+
+WiFi.begin(ssid, pass);
+
+  while (WiFi.status() != WL_CONNECTED)
+    {
+    delay(500);
+    Serial.print(&#34;.&#34;);
+    }
+}
+
+
+void loop()
+{
+
+h = 10+dht.readHumidity();
+t = dht.readTemperature();
+
+ThingSpeak.setField(1,t);
+ThingSpeak.setField(2,h);
+
+ThingSpeak.writeFields(myChannelNumber,api_key);
+delay(2000);
+}
+
+
+    
+</code></pre><h3 id="remember-to-change-all-the-initial-parameters">Remember to change all the initial parameters:</h3>
+<p>api_key = <em>&ldquo;YOUR KEY&rdquo;</em></p>
+<p>ssid = <em>&ldquo;wifi name&rdquo;</em></p>
+<p>pass = <em>&ldquo;wifi password&rdquo;</em></p>
+<p>myChannelNumber = <em>&ldquo;channel number&rdquo;</em></p>
+<h3 id="go-to-files---preferences-and-insert-this-link-in-additional-boards-manager-urls">Go to Files -&gt; Preferences and insert this link in “Additional Boards Manager URLs”:</h3>
+<p><a href="https://arduino.esp8266.com/stable/package_esp8266com_index.json" target="_blank" rel="noopener">https://arduino.esp8266.com/stable/package_esp8266com_index.json</a>
+</p>
+<h3 id="navigate-to-tools-and-select-manage-libraries-install-the-following-libraries">Navigate to &ldquo;Tools&rdquo; and select &ldquo;Manage Libraries.&rdquo; Install the following libraries:</h3>
+<ol>
+<li>
+<p>Adafruit ESP8266</p>
+</li>
+<li>
+<p>Adafruit DHT Sensor</p>
+</li>
+<li>
+<p>ThingSpeak IoT</p>
+</li>
+</ol>
+<h3 id="as-you-have-installed-all-the-necessary-libraries-you-can-upload-the-code-to-your-esp-connected-via-usb-serial">As you have installed all the necessary libraries you can upload the code to your esp connected via usb serial</h3>
+<p><strong>Connect the ESP8266 to the DHT11 in this way</strong></p>
+<p>ESP8266:</p>
+<p>GND -&gt; GND</p>
+<p>VCC -&gt; 3.3V</p>
+<p>IO2 -&gt; DHT11 Data</p>
+<p><div class="not-prose">
+<figure>
+    <img src="/esp8266/image.png"
+      alt="scheme" 
+      loading="lazy"
+    >
+  </figure></div>
+</p>
+<p>If you have done all the steps correctly you will find the data in thingspeak</p>
+<p><div class="not-prose">
+<figure>
+    <img src="/esp8266/charts.png"
+      alt="chart" 
+      loading="lazy"
+    >
+  </figure></div>
+</p>
 
     </article>
 
@@ -204,7 +391,7 @@
    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
    <path d="M14 9.75a3.016 3.016 0 0 0 -4.163 .173a2.993 2.993 0 0 0 0 4.154a3.016 3.016 0 0 0 4.163 .173"></path>
 </svg>
-</i> 2023 - 2024 
+</i> 2023 - 2024 Leonardo Cremonti
     
   </div>
   
@@ -218,6 +405,27 @@
 
   </footer>
   <script src="/main.js"></script>
+
+<div class="hidden top-1 right-1" id="code-copy">
+  <i class="h-6 w-6 block">
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copy" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z" />
+  <path d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1" />
+</svg>
+
+  </i>
+</div>
+<div class="hidden top-1 right-1" id="code-copy-done">
+  <i class="h-6 w-6 block">
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M5 12l5 5l10 -10" />
+</svg>
+
+  </i>
+</div><script src="/code-copy.js"></script>
+
 
 
 
