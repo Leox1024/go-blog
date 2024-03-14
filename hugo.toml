@@ -27,9 +27,9 @@ paginate = 10
     weight = 0
 
   [[menu.main]]
-    identifier = "about"
+    identifier = "about1"
     name = "About"
-    pageRef = "https://leox.me"
+    url = "https://leox.me"
     weight = 10
 
 [taxonomies]
