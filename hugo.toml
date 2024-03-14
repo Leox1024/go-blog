@@ -1,4 +1,4 @@
-baseURL = 'https://l3ox64.github.io/'
+baseURL = 'https://blog.leox.me/'
 languageCode = 'en-us'
 title = 'blog.leox.me'
 theme="hugo-blog-awesome"
