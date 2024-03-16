@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IoT on blog.leox.me</title>
+    <link>http://localhost:1313/tags/iot/</link>
+    <description>Recent content in IoT on blog.leox.me</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Leonardo Cremonti</copyright>
+    <lastBuildDate>Sat, 06 Jan 2024 20:34:07 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/iot/feed.xml" rel="self" type="application/rss+xml" />
+    
+  </channel>
+</rss>
