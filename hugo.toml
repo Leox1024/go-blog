@@ -38,3 +38,11 @@ category = "categories"
 tag = "tags"
 series = "series"
 
+[outputs]
+home = ["HTML", "RSS"]
+
+[outputFormats.RSS]
+mediatype = "application/rss"
+baseName = "rss/index"
+isPlainText = true
+
