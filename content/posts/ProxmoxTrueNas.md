@@ -126,4 +126,4 @@ Now you can start your VM and ensure that all disks are being read correctly.
 
 ![enc](/pvetruenas/enc.png)
 
-If you are running a home-lab setup like I do and you are using SFF desktop PC, you can use this specific type of HD enclosure to create your NAS and pass the disks using the above command. However, it's not recommended to use USB, but in my case it works correctly. Therefore, if you have the option, opt for a direct connection to the motherboard via SATA/PCI.
+If you are running a [home-lab setup](https://network.leox.me) like I do and you are using SFF desktop PC, you can use this specific type of HD enclosure to create your NAS and pass the disks using the above command. However, it's not recommended to use USB, but in my case it works correctly. Therefore, if you have the option, opt for a direct connection to the motherboard via SATA/PCI.
