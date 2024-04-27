@@ -7,14 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Leonardo Cremonti</copyright>
-    <lastBuildDate>Sat, 06 Jan 2024 20:34:07 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/electronic/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Jan 2024 20:34:07 +0100</lastBuildDate><atom:link href="http://localhost:1313/tags/electronic/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Connect ESP8266 with DHT11 sensor to ThingSpeak</title>
       <link>http://localhost:1313/posts/connectesp8266withdht11sensortothingspeak/</link>
       <pubDate>Sat, 06 Jan 2024 20:34:07 +0100</pubDate>
+      
       <guid>http://localhost:1313/posts/connectesp8266withdht11sensortothingspeak/</guid>
-      <description>Introduction In this tutorial I will explain you how to connect your ESP8266-01 to ThingSpeak and read some data.&#xA;Use Arduino IDE and load this program: #include &amp;#34;DHT.h&amp;#34;&#xD;#include &amp;#34;ESP8266WiFi.h&amp;#34;&#xD;#include &amp;#34;ThingSpeak.h&amp;#34;&#xD;const char * api_key = &amp;#34;abcdef&amp;#34;;&#xD;const char * ssid = &amp;#34;wifi-name&amp;#34;;&#xD;const char * pass = &amp;#34;wifi-password&amp;#34;;&#xD;unsigned long myChannelNumber=12345678;&#xD;const char* server = &amp;#34;api.thingspeak.com&amp;#34;;&#xD;#define DHTPIN 2&#xD;#define DHTTYPE DHT11&#xD;DHT dht (DHTPIN, DHTTYPE);&#xD;WiFiClient client;&#xD;float t;&#xD;float h;&#xD;void setup()&#xD;{&#xD;ThingSpeak.</description>
+      <description>
+        
+        Introduction In this tutorial I will explain you how to connect your ESP8266-01 to ThingSpeak and read some data.
+Use Arduino IDE and load this program: #include &amp;#34;DHT.h&amp;#34; #include &amp;#34;ESP8266WiFi.h&amp;#34; #include &amp;#34;ThingSpeak.h&amp;#34; const char * api_key = &amp;#34;abcdef&amp;#34;; const char * ssid = &amp;#34;wifi-name&amp;#34;; const char * pass = &amp;#34;wifi-password&amp;#34;; unsigned long myChannelNumber=12345678; const char* server = &amp;#34;api.thingspeak.com&amp;#34;; #define DHTPIN 2 #define DHTTYPE DHT11 DHT dht (DHTPIN, DHTTYPE); WiFiClient client; float t; float h; void setup() { ThingSpeak.
+      </description>
     </item>
+    
   </channel>
 </rss>

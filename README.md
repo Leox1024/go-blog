@@ -10,3 +10,5 @@ some useful command you can use in hugo:
 $ hugo server //start the server locally
 
 $ hugo server -D //build the draft
+
+$ hugo new content/posts/page.md

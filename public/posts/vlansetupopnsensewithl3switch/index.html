@@ -3,37 +3,35 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 
   
-  <title>Connect ESP8266 with DHT11 sensor to ThingSpeak :: blog.leox.me - Example site for hugo-theme-tailwind</title>
+  <title>Vlan Setup Opnsense VM on PVE With L3 Switch :: blog.leox.me - Example site for hugo-theme-tailwind</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta
   name="description"
-  content="Introduction In this tutorial I will explain you how to connect your ESP8266-01 to ThingSpeak and read some data.
-Use Arduino IDE and load this program: #include &amp;#34;DHT.h&amp;#34; #include &amp;#34;ESP8266WiFi.h&amp;#34; #include &amp;#34;ThingSpeak.h&amp;#34; const char * api_key = &amp;#34;abcdef&amp;#34;; const char * ssid = &amp;#34;wifi-name&amp;#34;; const char * pass = &amp;#34;wifi-password&amp;#34;; unsigned long myChannelNumber=12345678; const char* server = &amp;#34;api.thingspeak.com&amp;#34;; #define DHTPIN 2 #define DHTTYPE DHT11 DHT dht (DHTPIN, DHTTYPE); WiFiClient client; float t; float h; void setup() { ThingSpeak."
+  content="Introduction In this tutorial, I will cover how to configure an OPNsense VM on Proxmox with VLANs, connected to a Layer 3 switch. This setup is ideal for managing network segmentation and enhancing security within your virtual environment.
+Prerequisites Proxmox VE installed OPNsense VM running A physical Layer 3 switch Basic knowledge of network configuration Step 1: Install and Configure Open vSwitch on Proxmox First, install the Open vSwitch package on your Proxmox server:"
 />
 <meta
   name="keywords"
   content="hugo, tailwind, tailwindcss, hugo theme, hugo theme tailwind"
 />
 <meta name="robots" content="noodp" />
-<meta property="og:url" content="http://localhost:1313/posts/connectesp8266withdht11sensortothingspeak/">
+<meta property="og:url" content="http://localhost:1313/posts/vlansetupopnsensewithl3switch/">
   <meta property="og:site_name" content="blog.leox.me">
-  <meta property="og:title" content="Connect ESP8266 with DHT11 sensor to ThingSpeak">
-  <meta property="og:description" content="In this tutorial I will explain you how to connect your ESP8266-01 to ThingSpeak and read some data.">
+  <meta property="og:title" content="Vlan Setup Opnsense VM on PVE With L3 Switch">
+  <meta property="og:description" content="In this tutorial, I will explain how to set up VLAN on Opnsense using a L3 switch.">
   <meta property="og:locale" content="en-us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2024-01-06T20:34:07+01:00">
-    <meta property="article:modified_time" content="2024-01-06T20:34:07+01:00">
-    <meta property="article:tag" content="IoT">
-    <meta property="article:tag" content="Electronic">
+    <meta property="article:published_time" content="2024-04-27T19:21:45+02:00">
+    <meta property="article:modified_time" content="2024-04-27T19:21:45+02:00">
 
-<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Connect ESP8266 with DHT11 sensor to ThingSpeak">
-<meta name="twitter:description" content="In this tutorial I will explain you how to connect your ESP8266-01 to ThingSpeak and read some data.">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Vlan Setup Opnsense VM on PVE With L3 Switch">
+<meta name="twitter:description" content="In this tutorial, I will explain how to set up VLAN on Opnsense using a L3 switch.">
 
 
-<link rel="canonical" href="http://localhost:1313/posts/connectesp8266withdht11sensortothingspeak/" />
+<link rel="canonical" href="http://localhost:1313/posts/vlansetupopnsensewithl3switch/" />
 
 <link rel="shortcut icon" href="/favicon.ico" />
 <link rel="stylesheet" href="/css/index.990d326724754f27d5d9e8d3b865873e6b1c3f7e92dcc20f80375591db4b9835.css">
@@ -154,56 +152,15 @@ Use Arduino IDE and load this program: #include &amp;#34;DHT.h&amp;#34; #include
 <div class="w-full max-w-4xl lg:max-w-5xl">
   <div class="flex flex-col gap-y-3 p-6 mt-6 mx-2 md:mx-0 rounded-lg shadow-md bg-white dark:bg-gray-700">
     <h1 class="text-4xl font-semibold text-slate-800 dark:text-slate-100">
-      <a href="/posts/connectesp8266withdht11sensortothingspeak/">Connect ESP8266 with DHT11 sensor to ThingSpeak</a>
+      <a href="/posts/vlansetupopnsensewithl3switch/">Vlan Setup Opnsense VM on PVE With L3 Switch</a>
     </h1>
 
     
     <h2 class="my-4 text-large text-slate-600 dark:text-slate-300">
-      In this tutorial I will explain you how to connect your ESP8266-01 to ThingSpeak and read some data.
+      In this tutorial, I will explain how to set up VLAN on Opnsense using a L3 switch.
     </h2>
     
     
-  <ul class="flex flex-row flex-wrap text-slate-500 dark:text-slate-300">
-    
-    
-      
-      <li>
-        <a href="/tags/iot/"
-          class="flex flex-row text-sm mr-2 py-1">
-          <i class="h-5 w-5 flex-none">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-   <path d="M5 9l14 0"></path>
-   <path d="M5 15l14 0"></path>
-   <path d="M11 4l-4 16"></path>
-   <path d="M17 4l-4 16"></path>
-</svg>
-
-          </i>
-          <span class="ml-0">IoT</span>
-        </a>
-      </li>
-      
-      <li>
-        <a href="/tags/electronic/"
-          class="flex flex-row text-sm mr-2 py-1">
-          <i class="h-5 w-5 flex-none">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-   <path d="M5 9l14 0"></path>
-   <path d="M5 15l14 0"></path>
-   <path d="M11 4l-4 16"></path>
-   <path d="M17 4l-4 16"></path>
-</svg>
-
-          </i>
-          <span class="ml-0">Electronic</span>
-        </a>
-      </li>
-      
-    
-  </ul>
-
 
 
     <div class="flex flex-col gap-y-1 md:flex-row md:gap-y-0 md:gap-x-4 text-slate-500 dark:text-slate-300">
@@ -222,8 +179,8 @@ Use Arduino IDE and load this program: #include &amp;#34;DHT.h&amp;#34; #include
 </svg>
 
     </i>
-    <time datetime="2024-01-06T20:34:07&#43;01:00">
-      2024-01-06
+    <time datetime="2024-04-27T19:21:45&#43;02:00">
+      2024-04-27
     </time>
   </div>
 
@@ -250,15 +207,27 @@ Use Arduino IDE and load this program: #include &amp;#34;DHT.h&amp;#34; #include
         <h2>Table of Contents</h2>
         <aside><nav id="TableOfContents">
   <ul>
-    <li><a href="#introduction">Introduction</a>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#step-1-install-and-configure-open-vswitch-on-proxmox">Step 1: Install and Configure Open vSwitch on Proxmox</a>
       <ul>
-        <li><a href="#use-arduino-ide-and-load-this-program">Use Arduino IDE and load this program:</a></li>
-        <li><a href="#remember-to-change-all-the-initial-parameters">Remember to change all the initial parameters:</a></li>
-        <li><a href="#go-to-files---preferences-and-insert-this-link-in-additional-boards-manager-urls">Go to Files -&gt; Preferences and insert this link in “Additional Boards Manager URLs”:</a></li>
-        <li><a href="#navigate-to-tools-and-select-manage-libraries-install-the-following-libraries">Navigate to &ldquo;Tools&rdquo; and select &ldquo;Manage Libraries.&rdquo; Install the following libraries:</a></li>
-        <li><a href="#as-you-have-installed-all-the-necessary-libraries-you-can-upload-the-code-to-your-esp-connected-via-usb-serial">As you have installed all the necessary libraries you can upload the code to your esp connected via usb serial</a></li>
+        <li><a href="#configure-physical-interfaces">Configure Physical Interfaces</a></li>
       </ul>
     </li>
+    <li><a href="#step-2-assign-interfaces-in-opnsense">Step 2: Assign Interfaces in OPNsense</a></li>
+    <li><a href="#step-3-configure-opnsense-with-vlans">Step 3: Configure OPNsense with VLANs</a>
+      <ul>
+        <li><a href="#setup-vlans-in-opnsense">Setup VLANs in OPNsense</a></li>
+        <li><a href="#configure-dhcp-and-firewall-rules">Configure DHCP and Firewall Rules</a></li>
+      </ul>
+    </li>
+    <li><a href="#step-4-connect-and-configure-the-layer-3-switch">Step 4: Connect and Configure the Layer 3 Switch</a>
+      <ul>
+        <li><a href="#trunk-configuration">Trunk Configuration</a></li>
+        <li><a href="#access-ports-setup">Access Ports Setup</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
   </ul>
 </nav></aside>
       </section>
@@ -267,102 +236,88 @@ Use Arduino IDE and load this program: #include &amp;#34;DHT.h&amp;#34; #include
 
     <article class="mt-6 w-full max-w-4xl lg:max-w-5xl prose prose-slate dark:prose-invert prose-quoteless post-content">
       <h2 id="introduction">Introduction</h2>
-<p><strong>In this tutorial I will explain you how to connect your ESP8266-01 to ThingSpeak and read some data.</strong></p>
-<h3 id="use-arduino-ide-and-load-this-program">Use Arduino IDE and load this program:</h3>
-<pre tabindex="0"><code>#include &#34;DHT.h&#34;
-#include &#34;ESP8266WiFi.h&#34;
-#include &#34;ThingSpeak.h&#34;
-
-const char * api_key = &#34;abcdef&#34;;
-const char * ssid = &#34;wifi-name&#34;;
-const char * pass = &#34;wifi-password&#34;;
-unsigned long myChannelNumber=12345678;
-const char* server = &#34;api.thingspeak.com&#34;;
-
-#define DHTPIN 2
-#define DHTTYPE DHT11
-DHT dht (DHTPIN, DHTTYPE);
-
-WiFiClient client;
-float t;
-float h;
-
-
-void setup()
-{
-ThingSpeak.begin(client);
-dht.begin();
-Serial.begin(115200);
-delay(10);
-
-WiFi.begin(ssid, pass);
-
-  while (WiFi.status() != WL_CONNECTED)
-    {
-    delay(500);
-    Serial.print(&#34;.&#34;);
-    }
-}
-
-
-void loop()
-{
-
-h = 10+dht.readHumidity();
-t = dht.readTemperature();
-
-ThingSpeak.setField(1,t);
-ThingSpeak.setField(2,h);
-
-ThingSpeak.writeFields(myChannelNumber,api_key);
-delay(2000);
-}
-
-
-    
-</code></pre><h3 id="remember-to-change-all-the-initial-parameters">Remember to change all the initial parameters:</h3>
-<p>api_key = <em>&ldquo;YOUR KEY&rdquo;</em></p>
-<p>ssid = <em>&ldquo;wifi name&rdquo;</em></p>
-<p>pass = <em>&ldquo;wifi password&rdquo;</em></p>
-<p>myChannelNumber = <em>&ldquo;channel number&rdquo;</em></p>
-<h3 id="go-to-files---preferences-and-insert-this-link-in-additional-boards-manager-urls">Go to Files -&gt; Preferences and insert this link in “Additional Boards Manager URLs”:</h3>
-<p><a href="https://arduino.esp8266.com/stable/package_esp8266com_index.json" target="_blank" rel="noopener">https://arduino.esp8266.com/stable/package_esp8266com_index.json</a>
-</p>
-<h3 id="navigate-to-tools-and-select-manage-libraries-install-the-following-libraries">Navigate to &ldquo;Tools&rdquo; and select &ldquo;Manage Libraries.&rdquo; Install the following libraries:</h3>
-<ol>
-<li>
-<p>Adafruit ESP8266</p>
-</li>
-<li>
-<p>Adafruit DHT Sensor</p>
-</li>
-<li>
-<p>ThingSpeak IoT</p>
-</li>
-</ol>
-<h3 id="as-you-have-installed-all-the-necessary-libraries-you-can-upload-the-code-to-your-esp-connected-via-usb-serial">As you have installed all the necessary libraries you can upload the code to your esp connected via usb serial</h3>
-<p><strong>Connect the ESP8266 to the DHT11 in this way</strong></p>
-<p>ESP8266:</p>
-<p>GND -&gt; GND</p>
-<p>VCC -&gt; 3.3V</p>
-<p>IO2 -&gt; DHT11 Data</p>
+<p>In this tutorial, I will cover how to configure an OPNsense VM on Proxmox with VLANs, connected to a Layer 3 switch. This setup is ideal for managing network segmentation and enhancing security within your virtual environment.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Proxmox VE installed</li>
+<li>OPNsense VM running</li>
+<li>A physical Layer 3 switch</li>
+<li>Basic knowledge of network configuration</li>
+</ul>
+<h2 id="step-1-install-and-configure-open-vswitch-on-proxmox">Step 1: Install and Configure Open vSwitch on Proxmox</h2>
+<p>First, install the Open vSwitch package on your Proxmox server:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>apt update
+</span></span><span style="display:flex;"><span>apt install openvswitch-switch
+</span></span></code></pre></div><h3 id="configure-physical-interfaces">Configure Physical Interfaces</h3>
+<p>Proxmox node physical interfaces setup:</p>
+<ul>
+<li><code>enp2s0</code> are <code>enp3s0</code> are my physical interface</li>
+<li><code>enp3s0</code> is my WAN so I simply created a Linux Bridge pointing to this interface</li>
+<li><code>enp2s0</code> is my LAN so I created a OVS bridge interface pointing to this interface</li>
+<li><code>v10,v20,v30,v40</code> for the vlans I created OVS IntPort pointing to vmbr1</li>
+</ul>
 <p><div class="not-prose">
 <figure>
-    <img src="/esp8266/image.png"
-      alt="scheme" 
+    <img src="/vlanpve/image.png"
+      alt="int" 
       loading="lazy"
     >
   </figure></div>
 </p>
-<p>If you have done all the steps correctly you will find the data in thingspeak</p>
+<h2 id="step-2-assign-interfaces-in-opnsense">Step 2: Assign Interfaces in OPNsense</h2>
+<p>Once OPNsense is installed on a VM, assign the 2 interfaces.</p>
 <p><div class="not-prose">
 <figure>
-    <img src="/esp8266/charts.png"
-      alt="chart" 
+    <img src="/vlanpve/opn.png"
+      alt="opn" 
       loading="lazy"
     >
   </figure></div>
 </p>
+<h2 id="step-3-configure-opnsense-with-vlans">Step 3: Configure OPNsense with VLANs</h2>
+<h3 id="setup-vlans-in-opnsense">Setup VLANs in OPNsense</h3>
+<p>In the OPNsense web interface, navigate to Interfaces &gt; Other Types &gt; VLAN:</p>
+<ul>
+<li>Add VLANs by specifying the VLAN tag and corresponding interface.</li>
+</ul>
+<p><div class="not-prose">
+<figure>
+    <img src="/vlanpve/vlan.png"
+      alt="opn" 
+      loading="lazy"
+    >
+  </figure></div>
+</p>
+<p>then go to assignment and add the interface you created</p>
+<p><div class="not-prose">
+<figure>
+    <img src="/vlanpve/assign.png"
+      alt="assign" 
+      loading="lazy"
+    >
+  </figure></div>
+</p>
+<h3 id="configure-dhcp-and-firewall-rules">Configure DHCP and Firewall Rules</h3>
+<p>Set up DHCP servers for each VLAN to manage IP leasing and configure firewall rules to ensure secure traffic flow between VLANs.</p>
+<p><div class="not-prose">
+<figure>
+    <img src="/vlanpve/dhcp.png"
+      alt="dhcp" 
+      loading="lazy"
+    >
+  </figure></div>
+</p>
+<h2 id="step-4-connect-and-configure-the-layer-3-switch">Step 4: Connect and Configure the Layer 3 Switch</h2>
+<h3 id="trunk-configuration">Trunk Configuration</h3>
+<ul>
+<li>Configure the uplink port to the Proxmox server as a trunk port, allowing all VLANs.</li>
+</ul>
+<h3 id="access-ports-setup">Access Ports Setup</h3>
+<ul>
+<li>Set other ports as access ports, assigning them to specific VLANs as per your network design.</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>By following these steps, you can successfully configure VLANs on an OPNsense VM running on Proxmox, utilizing a physical Layer 3 switch to manage and route traffic efficiently. This setup is essential for maintaining a secure, segmented network in a virtualized environment.</p>
 
     </article>
 
