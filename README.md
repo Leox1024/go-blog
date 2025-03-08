@@ -1,5 +1,4 @@
-# 🌍 MyBlog – Powered by [Hugo](https://gohugo.io)
-
+# 🌍 MyBlog – Powered by Hugo
 Welcome to **MyBlog**, a fast and lightweight static site built with **Hugo**! 🚀  
 This blog is styled using the **[hugo-theme-tailwind](https://github.com/tomowang/hugo-theme-tailwind)** for a modern, minimalist look.  
 
