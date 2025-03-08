@@ -2,133 +2,155 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>blog.leox.me</title>
-    <link>http://localhost:1313/</link>
+    <link>https://blog.leox.me/</link>
     <description>Recent content on blog.leox.me</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Leonardo Cremonti</copyright>
-    <lastBuildDate>Sat, 27 Apr 2024 19:21:45 +0200</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 27 Apr 2024 19:21:45 +0200</lastBuildDate><atom:link href="https://blog.leox.me/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vlan Setup Opnsense VM on PVE With L3 Switch</title>
-      <link>http://localhost:1313/posts/vlansetupopnsensewithl3switch/</link>
+      <link>https://blog.leox.me/posts/vlansetupopnsensewithl3switch/</link>
       <pubDate>Sat, 27 Apr 2024 19:21:45 +0200</pubDate>
       
-      <guid>http://localhost:1313/posts/vlansetupopnsensewithl3switch/</guid>
+      <guid>https://blog.leox.me/posts/vlansetupopnsensewithl3switch/</guid>
       <description>
         
-        Introduction In this tutorial, I will cover how to configure an OPNsense VM on Proxmox with VLANs, connected to a Layer 3 switch. This setup is ideal for managing network segmentation and enhancing security within your virtual environment.
-Prerequisites Proxmox VE installed OPNsense VM running A physical Layer 3 switch Basic knowledge of network configuration Step 1: Install and Configure Open vSwitch on Proxmox First, install the Open vSwitch package on your Proxmox server:
+        &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;In this tutorial, I will cover how to configure an OPNsense VM on Proxmox with VLANs, connected to a Layer 3 switch. This setup is ideal for managing network segmentation and enhancing security within your virtual environment.&lt;/p&gt;
+&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Proxmox VE installed&lt;/li&gt;
+&lt;li&gt;OPNsense VM running&lt;/li&gt;
+&lt;li&gt;A physical Layer 3 switch&lt;/li&gt;
+&lt;li&gt;Basic knowledge of network configuration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;step-1-install-and-configure-open-vswitch-on-proxmox&#34;&gt;Step 1: Install and Configure Open vSwitch on Proxmox&lt;/h2&gt;
+&lt;p&gt;First, install the Open vSwitch package on your Proxmox server:&lt;/p&gt;
       </description>
     </item>
     
     <item>
       <title>Install TrueNas core on PVE</title>
-      <link>http://localhost:1313/posts/proxmoxtruenas/</link>
+      <link>https://blog.leox.me/posts/proxmoxtruenas/</link>
       <pubDate>Thu, 14 Mar 2024 22:23:01 +0100</pubDate>
       
-      <guid>http://localhost:1313/posts/proxmoxtruenas/</guid>
+      <guid>https://blog.leox.me/posts/proxmoxtruenas/</guid>
       <description>
         
-        Introduction In this tutorial, I will cover how to configure Truenas-core 13.0 using Proxmox 8.1.3, including the utilization of external HD as data storage.
-installation: Download the latest ISO version of TrueNas-core from here.
-You can directly insert the link of the ISO file on PVE by navigating to &amp;ldquo;Disk&amp;rdquo; &amp;gt; &amp;ldquo;ISO Images&amp;rdquo; &amp;gt; &amp;ldquo;Download From URL&amp;rdquo; &amp;gt; &amp;ldquo;Enter URL&amp;rdquo; and then click &amp;ldquo;Query URL&amp;rdquo;.
-In the right-top corner click create a new VM and use these settings:
+        &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;In this tutorial, I will cover how to configure Truenas-core 13.0 using Proxmox 8.1.3, including the utilization of external HD as data storage.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;installation&#34;&gt;installation:&lt;/h2&gt;
+&lt;p&gt;Download the latest ISO version of TrueNas-core from here.&lt;/p&gt;
+&lt;p&gt;You can directly insert the link of the ISO file on PVE by navigating to &amp;ldquo;Disk&amp;rdquo; &amp;gt; &amp;ldquo;ISO Images&amp;rdquo; &amp;gt; &amp;ldquo;Download From URL&amp;rdquo; &amp;gt; &amp;ldquo;Enter URL&amp;rdquo; and then click &amp;ldquo;Query URL&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;In the right-top corner click create a new VM and use these settings:&lt;/p&gt;
       </description>
     </item>
     
     <item>
       <title>ProxmoxBasicsTips</title>
-      <link>http://localhost:1313/posts/proxmoxbasicstips/</link>
+      <link>https://blog.leox.me/posts/proxmoxbasicstips/</link>
       <pubDate>Tue, 20 Feb 2024 22:09:11 +0100</pubDate>
       
-      <guid>http://localhost:1313/posts/proxmoxbasicstips/</guid>
+      <guid>https://blog.leox.me/posts/proxmoxbasicstips/</guid>
       <description>
         
-        Introduction PVE is a hypervisor that allows you to run Virtual Machines using Linux technologies. It is built on Debian and is entirely open-source. It operates through a web-based GUI where you can manage your VMs, LXC containers, networking, storage, and more
-Tips after installation: Remove pop-up &amp;ldquo;no valid subscription&amp;rdquo; run this command and clean cache of your broweser
-sed -i.backup -z &amp;#34;s/res === null || res === undefined || \!
+        &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;PVE is a hypervisor that allows you to run Virtual Machines using Linux technologies. It is built on Debian and is entirely open-source. It operates through a web-based GUI where you can manage your VMs, LXC containers, networking, storage, and more&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;tips-after-installation&#34;&gt;Tips after installation:&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;remove-pop-up-no-valid-subscription&#34;&gt;Remove pop-up &amp;ldquo;no valid subscription&amp;rdquo;&lt;/h3&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;div class=&#34;not-prose&#34;&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://blog.leox.me/pvebasic/image.png&#34;
+      alt=&#34;scheme&#34; 
+      loading=&#34;lazy&#34;
+    &gt;
+  &lt;/figure&gt;&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;run this command and clean cache of your broweser&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;    sed -i.backup -z &amp;#34;s/res === null || res === undefined || \!res || res\n\t\t\t.data.status.toLowerCase() \!== &amp;#39;active&amp;#39;/false/g&amp;#34; /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js &amp;amp;&amp;amp; systemctl restart pveproxy.service 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This message will disappear if you run the above command or if &lt;a href=&#34;https://www.proxmox.com/en/proxmox-virtual-environment/pricing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;purchase a subscription&lt;/a&gt;
+ (enterprise env).&lt;/p&gt;
       </description>
     </item>
     
     <item>
       <title>Connect ESP8266 with DHT11 sensor to ThingSpeak</title>
-      <link>http://localhost:1313/posts/connectesp8266withdht11sensortothingspeak/</link>
+      <link>https://blog.leox.me/posts/connectesp8266withdht11sensortothingspeak/</link>
       <pubDate>Sat, 06 Jan 2024 20:34:07 +0100</pubDate>
       
-      <guid>http://localhost:1313/posts/connectesp8266withdht11sensortothingspeak/</guid>
+      <guid>https://blog.leox.me/posts/connectesp8266withdht11sensortothingspeak/</guid>
       <description>
         
-        Introduction In this tutorial I will explain you how to connect your ESP8266-01 to ThingSpeak and read some data.
-Use Arduino IDE and load this program: #include &amp;#34;DHT.h&amp;#34; #include &amp;#34;ESP8266WiFi.h&amp;#34; #include &amp;#34;ThingSpeak.h&amp;#34; const char * api_key = &amp;#34;abcdef&amp;#34;; const char * ssid = &amp;#34;wifi-name&amp;#34;; const char * pass = &amp;#34;wifi-password&amp;#34;; unsigned long myChannelNumber=12345678; const char* server = &amp;#34;api.thingspeak.com&amp;#34;; #define DHTPIN 2 #define DHTTYPE DHT11 DHT dht (DHTPIN, DHTTYPE); WiFiClient client; float t; float h; void setup() { ThingSpeak.
+        &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;In this tutorial I will explain you how to connect your ESP8266-01 to ThingSpeak and read some data.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;use-arduino-ide-and-load-this-program&#34;&gt;Use Arduino IDE and load this program:&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#include &amp;#34;DHT.h&amp;#34;
+#include &amp;#34;ESP8266WiFi.h&amp;#34;
+#include &amp;#34;ThingSpeak.h&amp;#34;
+
+const char * api_key = &amp;#34;abcdef&amp;#34;;
+const char * ssid = &amp;#34;wifi-name&amp;#34;;
+const char * pass = &amp;#34;wifi-password&amp;#34;;
+unsigned long myChannelNumber=12345678;
+const char* server = &amp;#34;api.thingspeak.com&amp;#34;;
+
+#define DHTPIN 2
+#define DHTTYPE DHT11
+DHT dht (DHTPIN, DHTTYPE);
+
+WiFiClient client;
+float t;
+float h;
+
+
+void setup()
+{
+ThingSpeak.begin(client);
+dht.begin();
+Serial.begin(115200);
+delay(10);
+
+WiFi.begin(ssid, pass);
+
+  while (WiFi.status() != WL_CONNECTED)
+    {
+    delay(500);
+    Serial.print(&amp;#34;.&amp;#34;);
+    }
+}
+
+
+void loop()
+{
+
+h = 10+dht.readHumidity();
+t = dht.readTemperature();
+
+ThingSpeak.setField(1,t);
+ThingSpeak.setField(2,h);
+
+ThingSpeak.writeFields(myChannelNumber,api_key);
+delay(2000);
+}
+
+
+    
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;remember-to-change-all-the-initial-parameters&#34;&gt;Remember to change all the initial parameters:&lt;/h3&gt;
+&lt;p&gt;api_key = &lt;em&gt;&amp;ldquo;YOUR KEY&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
       </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://localhost:1313/search/_index.es/</link>
+      <link>https://blog.leox.me/search/_index.es/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/search/_index.es/</guid>
-      <description>
-        
-        
-      </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost:1313/search/_index.fr/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/search/_index.fr/</guid>
-      <description>
-        
-        
-      </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost:1313/search/_index.hi/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/search/_index.hi/</guid>
-      <description>
-        
-        
-      </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost:1313/search/_index.jp/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/search/_index.jp/</guid>
-      <description>
-        
-        
-      </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost:1313/search/_index.pl/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/search/_index.pl/</guid>
-      <description>
-        
-        
-      </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost:1313/search/_index.ru/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/search/_index.ru/</guid>
+      <guid>https://blog.leox.me/search/_index.es/</guid>
       <description>
         
         
@@ -137,10 +159,70 @@ Use Arduino IDE and load this program: #include &amp;#34;DHT.h&amp;#34; #include
     
     <item>
       <title></title>
-      <link>http://localhost:1313/search/_index.zh-cn/</link>
+      <link>https://blog.leox.me/search/_index.fr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/search/_index.zh-cn/</guid>
+      <guid>https://blog.leox.me/search/_index.fr/</guid>
+      <description>
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://blog.leox.me/search/_index.hi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.leox.me/search/_index.hi/</guid>
+      <description>
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://blog.leox.me/search/_index.jp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.leox.me/search/_index.jp/</guid>
+      <description>
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://blog.leox.me/search/_index.pl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.leox.me/search/_index.pl/</guid>
+      <description>
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://blog.leox.me/search/_index.ru/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.leox.me/search/_index.ru/</guid>
+      <description>
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://blog.leox.me/search/_index.zh-cn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.leox.me/search/_index.zh-cn/</guid>
       <description>
         
         

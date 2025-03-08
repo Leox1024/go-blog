@@ -2,22 +2,76 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IoT on blog.leox.me</title>
-    <link>http://localhost:1313/tags/iot/</link>
+    <link>https://blog.leox.me/tags/iot/</link>
     <description>Recent content in IoT on blog.leox.me</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Leonardo Cremonti</copyright>
-    <lastBuildDate>Sat, 06 Jan 2024 20:34:07 +0100</lastBuildDate><atom:link href="http://localhost:1313/tags/iot/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Jan 2024 20:34:07 +0100</lastBuildDate><atom:link href="https://blog.leox.me/tags/iot/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Connect ESP8266 with DHT11 sensor to ThingSpeak</title>
-      <link>http://localhost:1313/posts/connectesp8266withdht11sensortothingspeak/</link>
+      <link>https://blog.leox.me/posts/connectesp8266withdht11sensortothingspeak/</link>
       <pubDate>Sat, 06 Jan 2024 20:34:07 +0100</pubDate>
       
-      <guid>http://localhost:1313/posts/connectesp8266withdht11sensortothingspeak/</guid>
+      <guid>https://blog.leox.me/posts/connectesp8266withdht11sensortothingspeak/</guid>
       <description>
         
-        Introduction In this tutorial I will explain you how to connect your ESP8266-01 to ThingSpeak and read some data.
-Use Arduino IDE and load this program: #include &amp;#34;DHT.h&amp;#34; #include &amp;#34;ESP8266WiFi.h&amp;#34; #include &amp;#34;ThingSpeak.h&amp;#34; const char * api_key = &amp;#34;abcdef&amp;#34;; const char * ssid = &amp;#34;wifi-name&amp;#34;; const char * pass = &amp;#34;wifi-password&amp;#34;; unsigned long myChannelNumber=12345678; const char* server = &amp;#34;api.thingspeak.com&amp;#34;; #define DHTPIN 2 #define DHTTYPE DHT11 DHT dht (DHTPIN, DHTTYPE); WiFiClient client; float t; float h; void setup() { ThingSpeak.
+        &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;In this tutorial I will explain you how to connect your ESP8266-01 to ThingSpeak and read some data.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;use-arduino-ide-and-load-this-program&#34;&gt;Use Arduino IDE and load this program:&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#include &amp;#34;DHT.h&amp;#34;
+#include &amp;#34;ESP8266WiFi.h&amp;#34;
+#include &amp;#34;ThingSpeak.h&amp;#34;
+
+const char * api_key = &amp;#34;abcdef&amp;#34;;
+const char * ssid = &amp;#34;wifi-name&amp;#34;;
+const char * pass = &amp;#34;wifi-password&amp;#34;;
+unsigned long myChannelNumber=12345678;
+const char* server = &amp;#34;api.thingspeak.com&amp;#34;;
+
+#define DHTPIN 2
+#define DHTTYPE DHT11
+DHT dht (DHTPIN, DHTTYPE);
+
+WiFiClient client;
+float t;
+float h;
+
+
+void setup()
+{
+ThingSpeak.begin(client);
+dht.begin();
+Serial.begin(115200);
+delay(10);
+
+WiFi.begin(ssid, pass);
+
+  while (WiFi.status() != WL_CONNECTED)
+    {
+    delay(500);
+    Serial.print(&amp;#34;.&amp;#34;);
+    }
+}
+
+
+void loop()
+{
+
+h = 10+dht.readHumidity();
+t = dht.readTemperature();
+
+ThingSpeak.setField(1,t);
+ThingSpeak.setField(2,h);
+
+ThingSpeak.writeFields(myChannelNumber,api_key);
+delay(2000);
+}
+
+
+    
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;remember-to-change-all-the-initial-parameters&#34;&gt;Remember to change all the initial parameters:&lt;/h3&gt;
+&lt;p&gt;api_key = &lt;em&gt;&amp;ldquo;YOUR KEY&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
       </description>
     </item>
     

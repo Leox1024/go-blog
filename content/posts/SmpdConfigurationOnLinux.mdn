@@ -1,0 +1,1051 @@
+ 39 #include "crow.h"
+(2025-03-08 15:46:53) [INFO    ] Crow/1.2.1 server is running at http://0.0.0.0:3000 using 2 threads
+(2025-03-08 15:46:53) [INFO    ] Call `app.loglevel(crow::LogLevel::Warning)` to hide Info level logs.
+^C(2025-03-08 15:46:55) [INFO    ] Closing IO service 0x600000214050
+(2025-03-08 15:46:55) [INFO    ] Closing main IO service (0x12d704408)
+(2025-03-08 15:46:55) [INFO    ] Exiting.
+
+~/dev/webapp took 3s
+❯ vim .env
+
+~/dev/webapp took 6s
+❯ vim main.cpp
+ 39 #include "crow.h"
+
+~/dev/webapp took 7s
+❯ g++ -std=c++17 -I/opt/homebrew/Cellar/crow/1.2.1.2/include -I/opt/homebrew/Cellar/asio/1.30.2/include -o test main.cpp  && ./test
+Server in ascolto sulla porta: 4000
+envtest: Missing env value:ciao
+[1]    87090 segmentation fault  ./test
+
+~/dev/webapp
+❯ vim main.cpp
+
+~/dev/webapp took 36s
+❯ g++ -std=c++17 -I/opt/homebrew/Cellar/crow/1.2.1.2/include -I/opt/homebrew/Cellar/asio/1.30.2/include -o test main.cpp  && ./test
+ 45 #include "crow.h"
+ 45 #include <string>
+ 45 #include <iostream>
+ 45 #include <filesystem>
+ 45 #include <unordered_map>
+ 45
+ 45 using namespace std;
+ 45 using namespace std::filesystem;
+ 45
+ 30 void load_env_file(const string& filename) {
+Server in ascolto sulla porta: 4000
+envtest: Missing env value: ciao
+[1]    87121 segmentation fault  ./test
+
+~/dev/webapp
+❯ vim main.cpp
+
+~/dev/webapp took 17s
+❯ g++ -std=c++17 -I/opt/homebrew/Cellar/crow/1.2.1.2/include -I/opt/homebrew/Cellar/asio/1.30.2/include -o test main.cpp  && ./test
+main.cpp:40:3: error: no matching function for call to 'setenv'
+ 29 #include "crow.h"
+ 28 #include <string>
+   40 |                 setenv(var_name,10,1);
+      |                 ^~~~~~
+
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h:233:6: note: candidate function not viable: no known conversion from 'int' to 'const char *' for 2nd argument
+  233 | int      setenv(const char * __name, const char * __value, int __overwrite) __DARWIN_ALIAS(setenv);
+      |          ^                           ~~~~~~~~~~~~~~~~~~~~
+ 39 #include "crow.h"
+1 error generated.
+
+~/dev/webapp
+❯ vim main.cpp
+
+~/dev/webapp took 36s
+❯ g++ -std=c++17 -I/opt/homebrew/Cellar/crow/1.2.1.2/include -I/opt/homebrew/Cellar/asio/1.30.2/include -o test main.cpp  && ./test
+main.cpp:40:18: error: member reference base type 'const char *' is not a structure or union
+   40 |                 setenv(var_name.c_str,"10",1);
+      |                        ~~~~~~~~^~~~~~
+1 error generated.
+
+~/dev/webapp
+❯ vim main.cpp
+
+~/dev/webapp took 25s
+❯ g++ -std=c++17 -I/opt/homebrew/Cellar/crow/1.2.1.2/include -I/opt/homebrew/Cellar/asio/1.30.2/include -o test main.cpp  && ./test
+ 45 #include "crow.h"
+ 45 #include <string>
+ 45 #include <iostream>
+ 45 #include <filesystem>
+ 45 #include <unordered_map>
+ 45
+ 45 using namespace std;
+ 45 using namespace std::filesystem;
+ 45
+ 45 void load_env_file(const string& filename) {
+ 45     ifstream file(filename);
+ 45
+ 45     if (!file) {
+ 45         cerr << "Error reading file" << filename << endl;
+ 24         return;
+main.cpp:40:18: error: member reference base type 'const char *' is not a structure or union
+   40 |                 setenv(var_name.c_str(),"10",1);
+      |                        ~~~~~~~~^~~~~~
+^[[A1 error generated.
+
+~/dev/webapp
+❯ vim main.cpp
+
+~/dev/webapp took 2s
+❯ vim main.cpp
+
+~/dev/webapp took 47s
+❯ g++ -std=c++17 -I/opt/homebrew/Cellar/crow/1.2.1.2/include -I/opt/homebrew/Cellar/asio/1.30.2/include -o test main.cpp  && ./test
+main.cpp:40:18: error: member reference base type 'const char *' is not a structure or union
+   40 |                 setenv(var_name.c_str(),0,1);
+ 38 #include "crow.h"
+      |                        ~~~~~~~~^~~~~~
+^[[A1 error generated.
+
+~/dev/webapp
+❯ vim main.cpp
+
+[No write since last change]
+
+
+~/dev/webapp took 12s
+❯ vim main.cpp
+
+~/dev/webapp took 14s
+❯ g++ -std=c++17 -I/opt/homebrew/Cellar/crow/1.2.1.2/include -I/opt/homebrew/Cellar/asio/1.30.2/include -o test main.cpp  && ./test
+Server in ascolto sulla porta: 4000
+envtest: Missing env value: ciao(default 0)
+0
+(2025-03-08 15:51:26) [INFO    ] Crow/1.2.1 server is running at http://0.0.0.0:3000 using 2 threads
+(2025-03-08 15:51:26) [INFO    ] Call `app.loglevel(crow::LogLevel::Warning)` to hide Info level logs.
+:q!
+^C(2025-03-08 15:51:35) [INFO    ] Closing IO service 0x600000dc4260
+(2025-03-08 15:51:35) [INFO    ] Closing main IO service (0x14cf04248)
+(2025-03-08 15:51:35) [INFO    ] Exiting.
+
+~/dev/webapp took 11s
+ 45 #include "crow.h"
+ 45 #include <string>
+ 45 #include <iostream>
+ 45 #include <filesystem>
+ 45 #include <unordered_map>
+ 45
+ 45 using namespace std;
+ 45 using namespace std::filesystem;
+ 45
+ 45 void load_env_file(const string& filename) {
+ 45     ifstream file(filename);
+ 45
+ 45     if (!file) {
+ 45         cerr << "Error reading file" << filename << endl;
+ 45         return;
+ 45     }
+ 45
+ 45     string line;
+ 45     while (getline(file, line)) {
+ 45
+ 45         if (line.empty() || line[0] == '#') {
+ 45         continue;
+ 45         }
+ 45
+ 45         istringstream is_line(line);
+ 45         string key;
+ 43         if (getline(is_line, key, '=')) {
+❯
+
+~/dev/webapp
+❯ vim main.cpp
+
+~/dev/webapp took 25s
+❯ g++ -std=c++17 -I/opt/homebrew/Cellar/crow/1.2.1.2/include -I/opt/homebrew/Cellar/asio/1.30.2/include -o test main.cpp  && ./test
+Server in ascolto sulla porta: 4000
+envtest: Missing env value: ciao(default 0)
+0
+(2025-03-08 15:52:04) [INFO    ] Crow/1.2.1 server is running at http://0.0.0.0:3000 using 2 threads
+(2025-03-08 15:52:04) [INFO    ] Call `app.loglevel(crow::LogLevel::Warning)` to hide Info level logs.
+^[:q
+^C(2025-03-08 15:52:10) [INFO    ] Closing IO service 0x600001ed0020
+(2025-03-08 15:52:10) [INFO    ] Closing main IO service (0x144f04098)
+(2025-03-08 15:52:10) [INFO    ] Exiting.
+
+~/dev/webapp took 8s
+ 45 #include "crow.h"
+ 45 #include <string>
+ 45 #include <iostream>
+ 45 #include <filesystem>
+ 45 #include <unordered_map>
+ 45
+ 45 using namespace std;
+ 45 using namespace std::filesystem;
+ 45
+ 45 void load_env_file(const string& filename) {
+ 45     ifstream file(filename);
+ 45
+ 45     if (!file) {
+ 45         cerr << "Error reading file" << filename << endl;
+ 45         return;
+ 45     }
+ 45
+ 45     string line;
+ 45     while (getline(file, line)) {
+ 45
+ 45         if (line.empty() || line[0] == '#') {
+ 45         continue;
+ 45         }
+ 45
+ 45         istringstream is_line(line);
+ 45         string key;
+ 45         if (getline(is_line, key, '=')) {
+ 42             string value;
+❯ vim main.cpp
+
+~/dev/webapp took 7s
+❯
+
+~/dev/webapp
+❯ g++ -std=c++17 -I/opt/homebrew/Cellar/crow/1.2.1.2/include -I/opt/homebrew/Cellar/asio/1.30.2/include -o test main.cpp  && ./test
+Server in ascolto sulla porta: 4000
+envtest: Missing env value: ciao (default 0)
+0
+(2025-03-08 15:52:21) [INFO    ] Crow/1.2.1 server is running at http://0.0.0.0:3000 using 2 threads
+(2025-03-08 15:52:21) [INFO    ] Call `app.loglevel(crow::LogLevel::Warning)` to hide Info level logs.
+^[.Q!
+
+ 45         return;
+ 45     }
+ 45
+ 45     string line;
+ 45     while (getline(file, line)) {
+ 45
+ 45         if (line.empty() || line[0] == '#') {
+ 45         continue;
+ 45         }
+ 45
+ 45         istringstream is_line(line);
+ 45         string key;
+ 45         if (getline(is_line, key, '=')) {
+ 45             string value;
+ 45             if (getline(is_line, value)) {
+ 40                 setenv(key.c_str(), value.c_str(), 1);
+^C(2025-03-08 15:52:42) [INFO    ] Closing IO service 0x6000026782a0
+(2025-03-08 15:52:42) [INFO    ] Closing main IO service (0x138e049c8)
+(2025-03-08 15:52:42) [INFO    ] Exiting.
+
+~/dev/webapp took 22s
+❯
+
+~/dev/webapp
+❯ ./test
+
+~/dev/webapp
+❯ vim main.cpp
+
+~/dev/webapp took 23s
+❯ g++ -std=c++17 -I/opt/homebrew/Cellar/crow/1.2.1.2/include -I/opt/homebrew/Cellar/asio/1.30.2/include -o test main.cpp  && ./test
+main.cpp:70:6: error: no matching member function for call to 'port'
+   70 |         app.port(getenv("PORT")).run();
+      |         ~~~~^~~~
+ 45 #include "crow.h"
+ 45 #include <string>
+ 45 #include <iostream>
+ 45 #include <filesystem>
+ 45 #include <unordered_map>
+ 45
+ 45 using namespace std;
+ 45 using namespace std::filesystem;
+ 45
+ 45 void load_env_file(const string& filename) {
+ 45     ifstream file(filename);
+ 45
+ 45     if (!file) {
+ 45         cerr << "Error reading file" << filename << endl;
+ 45         return;
+ 45     }
+ 45
+ 45     string line;
+ 45     while (getline(file, line)) {
+ 45
+ 45         if (line.empty() || line[0] == '#') {
+ 45         continue;
+ 45         }
+ 45
+ 45         istringstream is_line(line);
+ 45         string key;
+ 45         if (getline(is_line, key, '=')) {
+ 45             string value;
+ 45             if (getline(is_line, value)) {
+  9                 setenv(key.c_str(), value.c_str(), 1);
+/opt/homebrew/Cellar/crow/1.2.1.2/include/crow/app.h:300:17: note: candidate function not viable: no known conversion from 'char *' to 'std::uint16_t' (aka 'unsigned short') for 1st argument; dereference the argument with *
+  300 |         self_t& port(std::uint16_t port)
+      |                 ^    ~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/crow/1.2.1.2/include/crow/app.h:307:23: note: candidate function not viable: requires 0 arguments, but 1 was provided
+  307 |         std::uint16_t port() const
+      |                       ^
+1 error generated.
+
+~/dev/webapp
+❯ vim main.cpp
+
+~/dev/webapp took 17s
+❯ g++ -std=c++17 -I/opt/homebrew/Cellar/crow/1.2.1.2/include -I/opt/homebrew/Cellar/asio/1.30.2/include -o test main.cpp  && ./test
+Server in ascolto sulla porta: 4000
+envtest: Missing env value: ciao (default 0)
+0
+ 45 #include "crow.h"
+ 45 #include <string>
+ 45 #include <iostream>
+ 45 #include <filesystem>
+ 45 #include <unordered_map>
+ 45
+ 45 using namespace std;
+ 45 using namespace std::filesystem;
+ 45
+ 45 void load_env_file(const string& filename) {
+ 45     ifstream file(filename);
+ 45
+ 45     if (!file) {
+ 45         cerr << "Error reading file" << filename << endl;
+ 45         return;
+ 45     }
+ 45
+ 45     string line;
+ 45     while (getline(file, line)) {
+ 45
+ 45         if (line.empty() || line[0] == '#') {
+ 45         continue;
+ 45         }
+ 45
+ 45         istringstream is_line(line);
+ 45         string key;
+ 45         if (getline(is_line, key, '=')) {
+ 45             string value;
+ 45             if (getline(is_line, value)) {
+ 40                 setenv(key.c_str(), value.c_str(), 1);
+(2025-03-08 15:53:35) [INFO    ] Crow/1.2.1 server is running at http://0.0.0.0:3000 using 2 threads
+(2025-03-08 15:53:35) [INFO    ] Call `app.loglevel(crow::LogLevel::Warning)` to hide Info level logs.
+^C(2025-03-08 15:53:36) [INFO    ] Closing IO service 0x600000f2c2a0
+(2025-03-08 15:53:36) [INFO    ] Closing main IO service (0x12ae049c8)
+(2025-03-08 15:53:36) [INFO    ] Exiting.
+
+~/dev/webapp took 2s
+❯ vim main.cpp
+
+~/dev/webapp took 14s
+❯ g++ -std=c++17 -I/opt/homebrew/Cellar/crow/1.2.1.2/include -I/opt/homebrew/Cellar/asio/1.30.2/include -o test main.cpp  && ./test
+main.cpp:70:6: error: no matching member function for call to 'port'
+   70 |         app.port(getenv("PORT")).run();
+      |         ~~~~^~~~
+ 45 #include "crow.h"
+ 45 #include <string>
+ 45 #include <iostream>
+ 45 #include <filesystem>
+ 45 #include <unordered_map>
+ 45
+ 45 using namespace std;
+ 45 using namespace std::filesystem;
+ 45
+ 45
+ 45 //load .env file
+ 45 void load_env_file(const string& filename) {
+ 45     ifstream file(filename);
+ 45
+ 45     if (!file) {
+ 45         cerr << "Error reading file" << filename << endl;
+ 45         return;
+ 45     }
+ 45
+ 45     string line;
+ 45     while (getline(file, line)) {
+ 45
+ 45         if (line.empty() || line[0] == '#') {
+ 45         continue;
+ 45         }
+ 45
+ 45         istringstream is_line(line);
+ 45         string key;
+ 45         if (getline(is_line, key, '=')) {
+ 45             string value;
+ 31 #include "crow.h"
+/opt/homebrew/Cellar/crow/1.2.1.2/include/crow/app.h:300:17: note: candidate function not viable: no known conversion from 'char *' to 'std::uint16_t' (aka 'unsigned short') for 1st argument; dereference the argument with *
+  300 |         self_t& port(std::uint16_t port)
+      |                 ^    ~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/crow/1.2.1.2/include/crow/app.h:307:23: note: candidate function not viable: requires 0 arguments, but 1 was provided
+  307 |         std::uint16_t port() const
+      |                       ^
+1 error generated.
+
+~/dev/webapp
+❯ vim main.cpp
+
+~/dev/webapp took 11s
+❯ g++ -std=c++17 -I/opt/homebrew/Cellar/crow/1.2.1.2/include -I/opt/homebrew/Cellar/asio/1.30.2/include -o test main.cpp  && ./test
+main.cpp:70:6: error: no matching member function for call to 'port'
+   70 |         app.port(get_env("PORT")).run();
+      |         ~~~~^~~~
+/opt/homebrew/Cellar/crow/1.2.1.2/include/crow/app.h:300:17: note: candidate function not viable: no known conversion from 'const char *' to 'std::uint16_t' (aka 'unsigned short') for 1st argument; dereference the argument with *
+  300 |         self_t& port(std::uint16_t port)
+      |                 ^    ~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/crow/1.2.1.2/include/crow/app.h:307:23: note: candidate function not viable: requires 0 arguments, but 1 was provided
+  307 |         std::uint16_t port() const
+      |                       ^
+1 error generated.
+
+~/dev/webapp
+❯ vim main.cpp
+
+~/dev/webapp took 1m7s
+❯ g++ -std=c++17 -I/opt/homebrew/Cellar/crow/1.2.1.2/include -I/opt/homebrew/Cellar/asio/1.30.2/include -o test main.cpp  && ./test
+Server in ascolto sulla porta: 4000
+envtest: Missing env value: ciao (default 0)
+0
+(2025-03-08 15:55:35) [INFO    ] Crow/1.2.1 server is running at http://0.0.0.0:4000 using 2 threads
+(2025-03-08 15:55:35) [INFO    ] Call `app.loglevel(crow::LogLevel::Warning)` to hide Info level logs.
+^C(2025-03-08 15:55:38) [INFO    ] Closing IO service 0x6000024f4260
+(2025-03-08 15:55:38) [INFO    ] Closing main IO service (0x12cf04248)
+(2025-03-08 15:55:38) [INFO    ] Exiting.
+
+~/dev/webapp took 5s
+❯ vim main.cpp
+
+~/dev/webapp took 1m16s
+❯ g++ -std=c++17 -I/opt/homebrew/Cellar/crow/1.2.1.2/include -I/opt/homebrew/Cellar/asio/1.30.2/include -o test main.cpp  && ./test
+(2025-03-08 15:56:59) [INFO    ] Crow/1.2.1 server is running at http://0.0.0.0:4000 using 2 threads
+(2025-03-08 15:56:59) [INFO    ] Call `app.loglevel(crow::LogLevel::Warning)` to hide Info level logs.
+(2025-03-08 15:57:06) [INFO    ] Response: 0x13b808218 / 404 0
+(2025-03-08 15:57:06) [INFO    ] Request: 127.0.0.1:54844 0x13c008218 HTTP/1.1 GET /favicon.ico
+(2025-03-08 15:57:06) [INFO    ] Response: 0x13c008218 /favicon.ico 200 0
+(2025-03-08 15:57:10) [INFO    ] Request: 127.0.0.1:54844 0x13c008218 HTTP/1.1 GET /bob
+(2025-03-08 15:57:10) [INFO    ] Response: 0x13c008218 /bob 200 0
+(2025-03-08 15:57:10) [INFO    ] Request: 127.0.0.1:54844 0x13c008218 HTTP/1.1 GET /favicon.ico
+(2025-03-08 15:57:10) [INFO    ] Response: 0x13c008218 /favicon.ico 200 0
+(2025-03-08 15:57:12) [INFO    ] Request: 127.0.0.1:54844 0x13c008218 HTTP/1.1 GET /test
+(2025-03-08 15:57:12) [INFO    ] Response: 0x13c008218 /test 200 0
+(2025-03-08 15:57:12) [INFO    ] Request: 127.0.0.1:54844 0x13c008218 HTTP/1.1 GET /favicon.ico
+(2025-03-08 15:57:12) [INFO    ] Response: 0x13c008218 /favicon.ico 200 0
+^C(2025-03-08 15:57:14) [INFO    ] Closing IO service 0x600002640250
+(2025-03-08 15:57:14) [INFO    ] Closing main IO service (0x14b704238)
+(2025-03-08 15:57:14) [INFO    ] Exiting.
+
+~/dev/webapp took 16s
+❯ ls
+main.cpp  templates test
+
+~/dev/webapp
+❯ rm test
+
+~/dev/webapp
+❯ ls
+main.cpp  templates
+
+~/dev/webapp
+❯ git init .
+Initialized empty Git repository in /Users/leox/dev/webapp/.git/
+
+webapp on  main [?]
+❯ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.env
+	main.cpp
+	templates/
+
+nothing added to commit but untracked files present (use "git add" to track)
+  0 # C++ File Sharing Server (WIP)
+
+webapp on  main [?]
+❯ git add .
+
+webapp on  main [+]
+❯ git commit -m "first-commit"
+[main (root-commit) 3ed935a] first-commit
+ 3 files changed, 91 insertions(+)
+ create mode 100644 .env
+ create mode 100644 main.cpp
+ create mode 100644 templates/home.html
+
+webapp on  main
+❯ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+webapp on  main
+❯ git remote add origin
+
+webapp on  main
+❯ git remote add origin https://github.com/l3ox64/lightshare.git
+git push -u origin main
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 1.11 KiB | 1.11 MiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/l3ox64/lightshare.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+webapp on  main
+❯ ls
+main.cpp  templates
+
+webapp on  main
+❯ vim README.md
+
+webapp on  main [?] took 2m51s
+❯ git commit -m "add readme"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+webapp on  main [?]
+❯ git add .
+
+webapp on  main [+]
+❯ git commit -m "add readme"
+[main 2246c49] add readme
+ 1 file changed, 23 insertions(+)
+ create mode 100644 README.md
+
+webapp on  main [⇡]
+❯ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 808 bytes | 808.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/l3ox64/lightshare.git
+   3ed935a..2246c49  main -> main
+
+webapp on  main
+❯ brew install hugo
+
+==> Downloading https://formulae.brew.sh/api/formula.jws.json
+==> Downloading https://formulae.brew.sh/api/cask.jws.json
+==> Downloading https://ghcr.io/v2/homebrew/core/hugo/manifests/0.145.0
+############################################################################################################ 100.0%
+==> Fetching hugo
+==> Downloading https://ghcr.io/v2/homebrew/core/hugo/blobs/sha256:25693c8624c76731849a689e88af1bf7ac9e086c358e0add
+############################################################################################################ 100.0%
+==> Pouring hugo--0.145.0.arm64_sequoia.bottle.tar.gz
+  UW PICO 5.09                                            New Buffer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                   [ New file ]
+^G Get Help        ^O WriteOut        ^R Read File       ^Y Prev Pg         ^K Cut Text        ^C Cur Pos
+^X Exit            ^J Justify         ^W Where is        ^V Next Pg         ^U UnCut Text      ^T To Spell
+==> Caveats
+zsh completions have been installed to:
+  /opt/homebrew/share/zsh/site-functions
+==> Summary
+🍺  /opt/homebrew/Cellar/hugo/0.145.0: 53 files, 70.8MB
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: emscripten/emsdk
+    steps:
+      - uses: actions/checkout@v3
+      - run: cmake -B build -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}} -DEMSCRIPTEN=ON
+      - run: cmake --build build --config ${{env.BUILD_TYPE}}
+      - uses: actions/upload-artifact@master
+        with:
+          name: page
+          path: build
+          if-no-files-found: error
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{steps.deployment.outputs.page_url}}
+
+    steps:
+      - uses: actions/download-artifact@master
+        with:
+          name: page
+          path: .
+      - uses: actions/configure-pages@v1
+      - uses: actions/upload-pages-artifact@v1
+        with:
+          path: .
+      - id: deployment
+        uses: actions/deploy-pages@main
+
+
+
+^G Get Help        ^O WriteOut        ^R Read File       ^Y Prev Pg         ^K Cut Text        ^C Cur Pos
+^X Exit            ^J Justify         ^W Where is        ^V Next Pg         ^U UnCut Text      ^T To Spell
+==> Running `brew cleanup hugo`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+
+webapp on  main took 3s
+❯ cd
+
+~
+❯ cd dev
+
+~/dev
+❯ ls
+code         docker       gfk-website  rust-project script-apple webapp
+
+~/dev
+❯ git clone https://github.com/l3ox64/go-blog
+Cloning into 'go-blog'...
+remote: Enumerating objects: 999, done.
+remote: Counting objects: 100% (999/999), done.
+remote: Compressing objects: 100% (511/511), done.
+remote: Total 999 (delta 477), reused 872 (delta 373), pack-reused 0 (from 0)
+Receiving objects: 100% (999/999), 3.24 MiB | 14.73 MiB/s, done.
+Resolving deltas: 100% (477/477), done.
+
+~/dev
+❯ ls
+code         docker       gfk-website  go-blog      rust-project script-apple webapp
+
+~/dev
+❯ cd go-blog
+
+go-blog on  main
+❯ ls
+README.md  archetypes content    hugo.toml  public     resources  static     themes
+
+go-blog on  main
+❯ mkdir -p .github/workflows
+
+
+go-blog on  main
+❯ nano .github/workflows/build-and-deploy.yml
+
+go-blog on  main [?] took 35s
+❯ git add .github/workflows/build-and-deploy.yml
+
+go-blog on  main [+]
+❯ git commit -m "Add GitHub Actions workflow for build and deploy"
+
+[main b74b186] Add GitHub Actions workflow for build and deploy
+ 1 file changed, 40 insertions(+)
+ create mode 100644 .github/workflows/build-and-deploy.yml
+
+go-blog on  main [⇡]
+❯ git push origin main
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 806 bytes | 806.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/l3ox64/go-blog
+   13975f7..b74b186  main -> main
+
+go-blog on  main
+❯ nano .github/workflows/build-and-deploy.yml
+
+go-blog on  main
+❯ rm helmrepository.yaml
+
+go-blog on  main
+❯
+
+go-blog on  main
+❯ rm -rf webapp
+
+go-blog on  main
+❯
+
+go-blog on  main
+❯ ls
+README.md  archetypes content    hugo.toml  public     resources  static     themes
+
+go-blog on  main
+❯ rm pts.cpp
+
+go-blog on  main
+❯ ls
+README.md  archetypes content    hugo.toml  public     resources  static     themes
+
+go-blog on  main
+❯ rmkdir -p .github/workflows
+
+
+go-blog on  main
+❯ rm -p .github/workflows
+
+rm: illegal option -- p
+usage: rm [-f | -i] [-dIPRrvWx] file ...
+       unlink [--] file
+
+go-blog on  main
+❯ hugo
+ERROR deprecated: site config key paginate was deprecated in Hugo v0.128.0 and subsequently removed. Use pagination.pagerSize instead.
+Start building sites …
+hugo v0.145.0+extended+withdeploy darwin/arm64 BuildDate=2025-02-26T15:41:25Z VendorInfo=brew
+
+Total in 34 ms
+Error: error building site: logged 1 error(s)
+
+go-blog on  main [!]
+❯ hugo new content/posts/.md
+  UW PICO 5.09                                       New Buffer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                           [ Read 43 lines ]
+^G Get Help      ^O WriteOut      ^R Read File     ^Y Prev Pg       ^K Cut Text      ^C Cur Pos
+^X Exit          ^J Justify       ^W Where is      ^V Next Pg       ^U UnCut Text    ^T To Spell
+
+
+go-blog on  main [!]
+❯ cd content
+
+go-blog/content on  main [!]
+❯ ls
+posts
+  UW PICO 5.09                                       New Buffer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            [ Read 8 lines ]
+^G Get Help      ^O WriteOut      ^R Read File     ^Y Prev Pg       ^K Cut Text      ^C Cur Pos
+^X Exit          ^J Justify       ^W Where is      ^V Next Pg       ^U UnCut Text    ^T To Spell
+
+go-blog/content on  main [!]
+❯ cd posts
+
+go-blog/content/posts on  main [!]
+  UW PICO 5.09                                       New Buffer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                           [ Read 129 lines ]
+^G Get Help      ^O WriteOut      ^R Read File     ^Y Prev Pg       ^K Cut Text      ^C Cur Pos
+^X Exit          ^J Justify       ^W Where is      ^V Next Pg       ^U UnCut Text    ^T To Spell
+❯ ls
+  UW PICO 5.09                                       New Buffer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            [ Read 8 lines ]
+^G Get Help      ^O WriteOut      ^R Read File     ^Y Prev Pg       ^K Cut Text      ^C Cur Pos
+  UW PICO 5.09                    File: content/posts/SmpdConfigurationOnLinux.md
+
+---
+title: "Content Placeholder"
+_build:
+  render: never
+  list: never
+  publishResources: false
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+^G Get Help      ^O WriteOut      ^R Read File     ^Y Prev Pg       ^K Cut Text      ^C Cur Pos
+^X Exit          ^J Justify       ^W Where is      ^V Next Pg       ^U UnCut Text    ^T To Spell
+  UW PICO 5.09                                                                         File: content/posts/SmpdConfigurationOnLinux.md
+
+---
+title: "Content Placeholder"
+_build:
+  render: never
+  list: never
+  publishResources: false
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+^G Get Help                        ^O WriteOut                        ^R Read File                       ^Y Prev Pg                         ^K Cut Text                        ^C Cur Pos
+^X Exit                            ^J Justify                         ^W Where is                        ^V Next Pg                         ^U UnCut Text                      ^T To Spell---
+title: "Content Placeholder"
+_build:
+  render: never
+  list: never
+  publishResources: false
+---
+
