@@ -2,7 +2,7 @@
 title = 'ProxmoxBasicsTips'
 date = 2024-02-20T22:09:11+01:00
 description = "In this tutorial I will explain you some basic tips for PVE."
-categories: [ "Networking", "Server", "Linux", "PVE"]
+categories = [ "Networking", "Server", "Linux", "PVE"]
 draft = false
 +++
 

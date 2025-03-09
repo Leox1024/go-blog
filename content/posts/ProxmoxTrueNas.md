@@ -2,7 +2,7 @@
 title = 'Install TrueNas core on PVE'
 date = 2024-03-14T22:23:01+01:00
 description = "In this tutorial I will explain how to install TrueNas Core on PVE."
-categories: [ "Networking", "Server", "Linux", "PVE", "TrueNas"]
+categories = [ "Networking", "Server", "Linux", "PVE", "TrueNas"]
 
 draft = false
 +++
