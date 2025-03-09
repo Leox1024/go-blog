@@ -2,8 +2,7 @@
 title: "Installing and Configuring SNMPv3 on Linux"
 date: 2024-03-08
 description: "A step-by-step guide to installing and securing SNMPv3 on Linux systems."
-tags: ["SNMP", "Monitoring", "Linux", "Security"]
-categories: ["Networking", "Linux"]
+categories: ["Networking", "Linux", "Monitoring", "SNMP"]
 draft: false
 ---
 

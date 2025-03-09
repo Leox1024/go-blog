@@ -2,7 +2,7 @@
 title = 'Connect ESP8266 with DHT11 sensor to ThingSpeak'
 date = 2024-01-06T20:34:07+01:00
 description = "In this tutorial I will explain you how to connect your ESP8266-01 to ThingSpeak and read some data."
-tags = [ "IoT", "Electronic"]
+categories: [ "IoT", "Electronic"]
 draft = false
 +++
 

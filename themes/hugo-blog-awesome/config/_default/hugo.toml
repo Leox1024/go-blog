@@ -1,5 +1,5 @@
-baseURL = 'https://example.org/'
-title = 'My New Hugo Site'
+baseURL = 'https://blog.leox.me/'
+title = 'Leox's Blog'
 author = ""
 copyright = ""
 languageCode = 'en'

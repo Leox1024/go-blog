@@ -3,6 +3,7 @@
 title = 'Vlan Setup Opnsense VM on PVE With L3 Switch'
 date = 2024-04-27T19:21:45+02:00
 description = "In this tutorial, I will explain how to set up VLAN on Opnsense using a L3 switch."
+categories: ["Networking", "PVE"]
 draft = false
 +++
 
