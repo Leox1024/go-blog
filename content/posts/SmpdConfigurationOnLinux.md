@@ -1,6 +1,6 @@
 ---
 title: "Installing and Configuring SNMPv3 on Linux"
-date: 2024-03-08
+date: 2025-03-08
 description: "A step-by-step guide to installing and securing SNMPv3 on Linux systems."
 categories: ["Networking", "Linux", "Monitoring", "SNMP"]
 draft: false
@@ -10,6 +10,14 @@ draft: false
 
 SNMP (Simple Network Management Protocol) is widely used for monitoring network devices, servers, and system metrics.  
 In this guide, we will set up **SNMPv3** on a Linux system with **authentication and encryption**, ensuring a secure monitoring environment.
+
+---
+
+If you prefer not to read the entire guide, you can run this script to enable SNMPv3 with authentication using MD5 as the authentication protocol and CBC-DES for encryption.
+
+```bash
+sudo curl -o snmpconfig.sh https://raw.githubusercontent.com/l3ox64/go-blog/refs/heads/main/script/smpdconfig.sh && chmod +x snmpconfig.sh && ./snmpconfig.sh
+```
 
 ---
 
