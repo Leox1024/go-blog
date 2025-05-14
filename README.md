@@ -1,9 +1,9 @@
-# 🌍 MyBlog – Powered by Hugo
-Welcome to **MyBlog**, a fast and lightweight static site built with **Hugo**! 🚀  
+# MyBlog – Powered by Hugo
+Welcome to **MyBlog**, a fast and lightweight static site built with **Hugo**!
 This blog is styled using the **[hugo-theme-tailwind](https://github.com/tomowang/hugo-theme-tailwind)** for a modern, minimalist look.  
 
-## 📢 **Live Preview**
-🔗 You can check out my blog **[here](https://blog.leox.me)**.  
+## **Live Preview**
+You can check out my blog **[here](https://blog.leox.me)**.  
 
 ---
 
